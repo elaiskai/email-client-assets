@@ -7,15 +7,16 @@
 <style>
   :root{--green:#2E9E4F;--dark:#1A1A1A;--grey:#555;--red:#C02A2A;--line:#e5e5e5;--bg:#f7f8f7;}
   *{box-sizing:border-box;}
-  body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;color:var(--dark);background:var(--bg);line-height:1.55;}
+  body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;color:var(--dark);background:var(--bg);line-height:1.6;}
   .wrap{max-width:860px;margin:0 auto;padding:24px 18px 60px;}
   h1{color:var(--green);font-size:26px;margin:8px 0 2px;}
   .sub{color:var(--grey);font-size:13px;margin-bottom:18px;}
   .intro{color:var(--grey);font-size:14px;background:#fff;border-left:4px solid var(--green);padding:12px 14px;border-radius:0 8px 8px 0;margin-bottom:24px;}
   h2{color:var(--green);font-size:19px;margin:32px 0 6px;padding-bottom:6px;border-bottom:2px solid var(--green);}
-  h3{font-size:15px;margin:20px 0 6px;color:var(--dark);}
+  h3{font-size:15px;margin:22px 0 6px;color:var(--dark);}
+  p{margin:8px 0;}
   ul{margin:8px 0 8px;padding-left:20px;}
-  li{margin:5px 0;}
+  li{margin:6px 0;}
   table{width:100%;border-collapse:collapse;margin:12px 0;background:#fff;border-radius:8px;overflow:hidden;font-size:13.5px;box-shadow:0 1px 3px rgba(0,0,0,.06);}
   th{background:var(--green);color:#fff;text-align:left;padding:9px 11px;font-weight:600;}
   td{padding:9px 11px;border-top:1px solid var(--line);vertical-align:top;}
@@ -30,94 +31,91 @@
 <body>
 <div class="wrap">
 
-<h1>PRO7.LT - Jungtinis Omnisend auditas</h1>
-<div class="sub">Automatikos &middot; kampanijos &middot; segmentai &middot; higiena &nbsp;|&nbsp; 2026-09-01 &nbsp;|&nbsp; eLaiškai</div>
+<h1>PRO7.LT - el. pašto rinkodaros auditas</h1>
+<div class="sub">Automatiniai laiškai &middot; kampanijos &middot; auditorijos skaidymas &middot; kontaktų tvarka &nbsp;|&nbsp; 2026-09-01 &nbsp;|&nbsp; eLaiškai</div>
 
-<div class="intro">Šis dokumentas sujungia du auditus: PRO7 komandos (turinio ir logikos vertinimas iš vidaus) ir eLaiškai (techninis Omnisend auditas per API + rodikliai). Tikslas - vienas veiksmų planas.</div>
+<div class="intro">Šį auditą parengėme kartu: PRO7 komanda įvertino laiškų turinį ir logiką iš vidaus, o mes (eLaiškai) peržiūrėjome techninę Omnisend paskyros pusę ir skaičius. Sujungėme abu vertinimus į vieną dokumentą su aiškiu veiksmų planu.</div>
 
-<h2>1. Trumpa santrauka</h2>
+<h2>1. Trumpai - kur esame</h2>
+<p>Jūsų el. pašto sistema veikia jau seniai ir yra brandi, bet per pastarąjį pusmetį pastebimai krito rezultatai. Trys pagrindiniai dalykai, kuriuos matome:</p>
 <ul>
-  <li>Bazė brandi ir veikianti, bet rodikliai krenta: atidarymo piko <strong>63%</strong> (2026-02) → vidutiniškai <strong>~27%</strong> (2026 vasara). Priežastis - siunčiama VISAI bazei be segmentavimo.</li>
-  <li>Automatikų struktūra yra, bet paveldėta iš buvusios agentūros („(Maily)"), su dubliais ir silpnu dizainu. Copy dažniausiai geras - dizainas ir logika silpnesni.</li>
-  <li><strong>40% kontaktų = nonSubscribed</strong> (be marketing sutikimo) - „miręs svoris", tempia rodiklius žemyn + Omnisend kaštai už nereikalingus kontaktus.</li>
-  <li>Didžiausios galimybės: (1) segmentavimas, (2) automatikų sutvarkymas + praplėtimas iki 3 laiškų, (3) papildymo (replenishment) flow suvartojamoms prekėms, (4) bazės higiena.</li>
+  <li><strong>Laiškus atidaro vis mažiau žmonių.</strong> Anksčiau geriausi laiškai buvo atidaromi net 63% gavėjų (2026 vasarį), o šią vasarą vidurkis nukrito iki maždaug 27%. Pagrindinė priežastis - laiškai siunčiami visiems iš eilės, neskirstant žmonių pagal jų elgesį.</li>
+  <li><strong>Automatiniai laiškai (welcome, priminimai ir pan.) yra, bet netvarkingi.</strong> Jie liko paveldėti iš ankstesnės agentūros, yra pasikartojančių dublikatų, o dizainas atrodo pasenęs. Tekstai dažniausiai geri - labiausiai šlubuoja išvaizda ir sudėliojimo logika.</li>
+  <li><strong>Beveik pusė kontaktų (40%) yra „negyvi".</strong> Tai žmonės, kurie nedavė sutikimo gauti laiškų, todėl jiems niekas nesiunčiama. Jie tik tempia rodiklius žemyn ir dar kainuoja - už juos mokate Omnisend platformai be jokios naudos.</li>
 </ul>
+<p>Didžiausios galimybės pagerinti rezultatus: (1) suskirstyti žmones į grupes ir kiekvienai rašyti atskirai, (2) sutvarkyti ir praplėsti automatinius laiškus, (3) sukurti priminimo laiškus apie besibaigiančias prekes, (4) išvalyti kontaktų sąrašą.</p>
 
-<h2>2. Automatikos - vertinimas ir ką keisti</h2>
-<p style="color:var(--grey);font-size:13.5px;">Bendras principas visoms sekoms: praplėsti nuo 2 iki 3 laiškų, sumažinti/optimizuoti laiko delay, atnaujinti dizainą (copy dažniausiai palikti).</p>
+<h2>2. Automatiniai laiškai - ką turime ir ką keisti</h2>
+<p>Bendra taisyklė visoms sekoms: kur dabar 2 laiškai, dažniausiai vertėtų daryti 3; sutrumpinti pauzes tarp laiškų, kad ateitų laiku; ir atnaujinti dizainą. Tekstus daugeliu atvejų galima palikti - jie neblogi.</p>
 <table>
-  <tr><th>Flow</th><th>Būklė / vertinimas</th><th>Ką keisti</th></tr>
-  <tr><td><strong>Welcome</strong></td><td>2 laiškai. 2-as atidaromas ~perpus mažiau, maži paspaudimai. Turinys visai neblogas.</td><td>Sumažinti time delay; praplėsti iki 3 laiškų; atnaujinti dizainą; <strong>PRIDĖTI welcome kodą/paskatą</strong> (dabar jos nėra).</td></tr>
-  <tr><td><strong>No Purchase 30d</strong></td><td>1 laiškas. Copy px nice, dizainas lievas, mažas open rate.</td><td>Naujas dizainas; stipresnis kabliukas/oferta; suderinti su 60d, kad nesidubliuotų.</td></tr>
-  <tr><td><strong>No Purchase 60d</strong></td><td>Analogiškai kaip 30d (atskiras panašus flow).</td><td>Tas pats: dizainas + progresija nuo 30d (švelnus priminimas → stipresnė paskata).</td></tr>
-  <tr><td><strong>Anniversary</strong></td><td>Idėjai ir logikai - taip, patinka! Veikia gerai.</td><td>Tik dizaino refresh. Papildomai: pridurti nuolaidos kodą (dabar be kodo).</td></tr>
-  <tr><td><strong>After 2nd purchase</strong></td><td>Idėja, logika, viskas fainai.</td><td>Tik dizainas - dabartinis nepatinka. Atnaujinti vizualą, copy palikti.</td></tr>
-  <tr><td><strong>Abandoned cart</strong></td><td>VISIŠKA abandoned checkout kopija. Dėl blogos logikos išsiunčiama labai mažai laiškų.</td><td>Atskirti turinį nuo checkout; pataisyti trigerį/logiką; 3 laiškai vietoj 2; naujas dizainas; suppression su checkout.</td></tr>
-  <tr><td><strong>Abandoned checkout</strong></td><td>Ta pati problema - dubliuoja cart, mažai siunčiama.</td><td>Turi būti <strong>LABIAU URGENT</strong> (žmogus arčiau pirkimo); 3 laiškai; skirtingas dizainas nuo cart; taisyti logiką/laiką.</td></tr>
+  <tr><th>Laiškų seka</th><th>Kaip vertiname dabar</th><th>Ką siūlome keisti</th></tr>
+  <tr><td><strong>Pasisveikinimo (Welcome)</strong></td><td>Dabar 2 laiškai. Antrąjį atidaro maždaug perpus mažiau žmonių, paspaudimų mažai. Turinys visai neblogas.</td><td>Sutrumpinti laukimą tarp laiškų; pridėti trečią laišką; atnaujinti dizainą; ir svarbiausia - <strong>įdėti pasveikinimo nuolaidos kodą</strong>. Dabar jo nėra, tad prarandame pirkėją pačiu karščiausiu momentu.</td></tr>
+  <tr><td><strong>Priminimas po 30 d. be pirkimo</strong></td><td>Tik 1 laiškas. Tekstas geras, bet dizainas silpnas ir atidaro mažai žmonių.</td><td>Naujas dizainas; stipresnė paskata pirkti; ir suderinti su 60 d. laišku, kad nesikartotų.</td></tr>
+  <tr><td><strong>Priminimas po 60 d. be pirkimo</strong></td><td>Panašiai kaip 30 d. - atskira, bet beveik tokia pati seka.</td><td>Tas pats: naujas dizainas ir aiški eiga - pirmas laiškas švelnus priminimas, antras jau su stipresne nuolaida.</td></tr>
+  <tr><td><strong>Gimtadienio / metinių laiškas</strong></td><td>Idėja ir logika puikios - patinka, veikia gerai.</td><td>Užtenka atnaujinti dizainą. Papildomai galima įdėti dovanų kodą (dabar jo nėra).</td></tr>
+  <tr><td><strong>Padėka po 2-o pirkimo</strong></td><td>Idėja ir logika geros.</td><td>Reikia tik naujo dizaino - dabartinis nepatinka. Tekstą paliekame.</td></tr>
+  <tr><td><strong>Paliktas krepšelis</strong></td><td>Šis laiškas beveik pažodžiui nukopijuotas nuo „neužbaigto pirkimo". Dėl blogos logikos išsiunčiama labai mažai laiškų.</td><td>Parašyti savo, skirtingą tekstą; pataisyti, kada laiškas suveikia; daryti 3 laiškus vietoj 2; naujas dizainas; ir pasirūpinti, kad tas pats žmogus negautų ir šio, ir „neužbaigto pirkimo" laiško.</td></tr>
+  <tr><td><strong>Neužbaigtas pirkimas</strong></td><td>Ta pati bėda - dubliuoja „palikto krepšelio" laišką, siunčiama mažai.</td><td>Šis turi būti <strong>skubesnis</strong> (žmogus jau arti pirkimo); 3 laiškai; kitoks dizainas nei „palikto krepšelio"; pataisyti laiką ir logiką.</td></tr>
 </table>
 
-<h3>Trūkstami / sugedę flow (eLaiškai papildymas)</h3>
+<h3>Ko trūksta arba kas sugedę (mūsų pastebėjimai)</h3>
 <table>
-  <tr><th>Flow</th><th>Statusas</th><th>Kodėl svarbu PRO7</th></tr>
-  <tr><td><strong>Atsiliepimų flow</strong></td><td>NĖRA dedikuoto (yra tik „Top Produktų Apklausa" survey)</td><td>Reikia tikro review flow po pristatymo (~7-14d) su tiesiogine nuoroda palikti atsiliepimą - social proof + SEO.</td></tr>
-  <tr><td><strong>Product Abandonment</strong></td><td>EGZISTUOJA, bet OFF ir miskonfigūruotas (trigger = „placed order", t.y. PO pirkimo)</td><td>Perkonfigūruoti į product-view trigerį ir įjungti; suderinti su Browse Abandonment.</td></tr>
-  <tr><td class="fire">Papildymo (replenishment)</td><td>NĖRA</td><td><span class="fire">Didžiausia praleista galimybė.</span> Valikliai = suvartojami. „Baigiasi grindų valiklis?" po X dienų = pasikartojantis pardavimas beveik be pastangų.</td></tr>
-  <tr><td><strong>Gilesnis win-back / sunset</strong></td><td>Yra tik 30/60d</td><td>Pridėti 90/120d „paskutinis šansas" + sunset (nustoti siųsti neatidariusiems 90-180d) - gina reputaciją.</td></tr>
-  <tr><td><strong>VIP / lojalumo flow</strong></td><td>NĖRA</td><td>Atskiras dėmesys geriausiems klientams (jungiasi su VIP segmentu).</td></tr>
+  <tr><th>Laiškų seka</th><th>Būklė</th><th>Kodėl verta PRO7</th></tr>
+  <tr><td><strong>Atsiliepimų prašymas</strong></td><td>Atskiros sekos nėra. Yra tik apklausa apie populiariausias prekes, bet tai ne tas pats.</td><td>Reikia laiško, kuris po prekės gavimo (maždaug po 7-14 d.) paprašytų palikti atsiliepimą su tiesiogine nuoroda. Tai duoda pasitikėjimo naujiems pirkėjams ir padeda matomumui Google.</td></tr>
+  <tr><td><strong>Peržiūrėtos, bet nepirktos prekės priminimas</strong></td><td>Seka yra, bet <strong>išjungta ir sudėliota klaidingai</strong> - dabar ji suveikia po pirkimo, o ne kai žmogus tik pažiūrėjo prekę.</td><td>Perdaryti taip, kad suveiktų pažiūrėjus prekę, ir įjungti. Suderinti su jau veikiančiu „naršymo" laišku, kad nesikartotų.</td></tr>
+  <tr><td class="fire">Priminimas papildyti atsargas</td><td>Nėra visai.</td><td><span class="fire">Didžiausia praleista galimybė.</span> Valikliai baigiasi ir žmonės perka juos vėl ir vėl. Laiškas „Turbūt baigiasi grindų valiklis?" po tam tikro laiko = pasikartojantys pardavimai beveik be pastangų.</td></tr>
+  <tr><td><strong>Užmigusių klientų grąžinimas</strong></td><td>Yra tik 30 ir 60 d. priminimai.</td><td>Pridėti „paskutinio šanso" laišką po 90-120 d. su stipresne paskata, o visai neatsiliepiantiems (90-180 d.) laiškus nustoti siųsti - tai saugo Jūsų reputaciją.</td></tr>
+  <tr><td><strong>Dėmesys geriausiems klientams (VIP)</strong></td><td>Nėra atskiros sekos.</td><td>Lojaliausiems pirkėjams verta atskiro dėmesio - išskirtinių pasiūlymų ir padėkos (sujungiama su VIP grupe, žr. 3 skyrių).</td></tr>
 </table>
 
-<h3>Bendra automatikų netvarka</h3>
+<h3>Bendra netvarka, kurią reikia sutvarkyti</h3>
 <ul>
-  <li>4 welcome versijos (1 ON, 3 OFF) su tuo pačiu turiniu - sujungti į 1 stiprų.</li>
-  <li>Abandoned Checkout dubliuotas (2 objektai) - palikti vieną.</li>
-  <li>Visos pavadintos „(Maily)" - pervadinti tvarkingai.</li>
-  <li>Sender vardas nekonsistentiškas: „PRO7" / „PRO7.LT" / „Deividas iš PRO7" - standartizuoti į vieną.</li>
+  <li>Yra net 4 pasisveikinimo laiškų versijos su tuo pačiu turiniu (1 įjungta, 3 išjungtos) - sujungti į vieną tvarkingą.</li>
+  <li>„Neužbaigto pirkimo" seka sudubliuota (yra du vienodi objektai) - palikti vieną.</li>
+  <li>Visos sekos vadinasi su prierašu „(Maily)" nuo ankstesnės agentūros - pervadinti tvarkingai.</li>
+  <li>Siuntėjo vardas skiriasi skirtinguose laiškuose: „PRO7", „PRO7.LT", „Deividas iš PRO7". Reikia pasirinkti vieną ir naudoti visur.</li>
 </ul>
 
-<h2>3. Kampanijos ir segmentai</h2>
-<ul>
-  <li>Segmentų praktiškai NĖRA - beveik viskas siunčiama visai duombazei (allContacts).</li>
-  <li>Open rate stipriai nukrito per paskutinius 6 mėn: buvo piko 63%, dabar vidutiniškai ~27%.</li>
-  <li>Priežastis tiesioginė: didesnei, mažiau įsitraukusiai bazei siunčiant vienodą žinutę - krenta rodikliai ir reputacija.</li>
-</ul>
-<h3>Sprendimas - segmentavimas pagal pirkimo istoriją</h3>
-<p style="color:var(--grey);font-size:13.5px;">Kurti segmentus ir laiškus atskirai kiekvienam, kad būtų labiau personalizuota ir asmeniška:</p>
+<h2>3. Kampanijos ir auditorijos skaidymas</h2>
+<p>Čia yra didžiausia augimo galimybė. Šiuo metu beveik visi laiškai siunčiami visai kontaktų bazei iš eilės, neišskiriant, kas aktyvus, o kas ne. Būtent dėl to, augant sąrašui, krenta atidarymai ir kenčia reputacija - laiškas apie tą patį pasiūlymą pasiekia ir tuos, kuriems jis visai neįdomus.</p>
+<h3>Sprendimas - skirstyti žmones į grupes ir kalbėti su kiekviena atskirai</h3>
+<p>Vietoj vieno laiško visiems - kuriame grupes pagal pirkimo istoriją ir elgesį, ir kiekvienai rašome asmeniškiau. Taip laiškai tampa aktualesni ir grįžta geresni rodikliai.</p>
 <table>
-  <tr><th>Segmentas</th><th>Logika</th><th>Žinutės tonas</th></tr>
-  <tr><td><strong>VIP / didelė vertė</strong></td><td>Pagal užsakymų sumą / kiekį</td><td>Išskirtiniai pasiūlymai, ankstyva prieiga, padėka</td></tr>
-  <tr><td><strong>Aktyvūs 30d</strong></td><td>Atidarė / pirko per 30d</td><td>Naujienos, cross-sell, papildymas</td></tr>
-  <tr><td><strong>Aktyvūs 90d</strong></td><td>Atidarė per 90d</td><td>Reguliarios akcijos + edukacija</td></tr>
-  <tr><td><strong>Neaktyvūs</strong></td><td>Neatidarė 90-180d</td><td>Reaktyvacija → sunset (nustoti siųsti)</td></tr>
-  <tr><td><strong>Domėjimasis kategorija</strong></td><td>Auto / langai / kalkės / pelėsis</td><td>Turinys pagal susidomėjimą</td></tr>
+  <tr><th>Grupė</th><th>Kas patenka</th><th>Kokia žinutė</th></tr>
+  <tr><td><strong>VIP (geriausi klientai)</strong></td><td>Daug ir dažnai perkantys</td><td>Išskirtiniai pasiūlymai, ankstyva prieiga prie akcijų, padėka</td></tr>
+  <tr><td><strong>Aktyvūs (30 d.)</strong></td><td>Neseniai pirko ar atidarė laišką</td><td>Naujienos, papildomų prekių pasiūlymai, atsargų papildymas</td></tr>
+  <tr><td><strong>Aktyvūs (90 d.)</strong></td><td>Atidarė laiškus per 3 mėn.</td><td>Įprastos akcijos ir naudingi patarimai</td></tr>
+  <tr><td><strong>Neaktyvūs</strong></td><td>Neatidarė laiškų 3-6 mėn.</td><td>Bandome sugrąžinti, o jei nepavyksta - nustojame siųsti</td></tr>
+  <tr><td><strong>Pagal domėjimąsi</strong></td><td>Automobiliai / langai / kalkės / pelėsis ir pan.</td><td>Turinys pagal tai, kas žmogui aktualu</td></tr>
 </table>
 
-<h2>4. Bazės higiena ir sutikimai</h2>
+<h2>4. Kontaktų sąrašo tvarka</h2>
 <ul>
-  <li>Atlikti higieną: sužiūrėti kiek iš tikro yra REIKALINGŲ kontaktų ir pravalyti nereikalingus.</li>
-  <li>Nauda: sumažins Omnisend platformos naudojimo kaštus (bent keletą šimtų) + pagerins rodiklius.</li>
-  <li>40% kontaktų = nonSubscribed (be marketing consent) - jie ir yra pagrindinis valymo objektas + deliverability rizika. Higiena ir re-permission čia jungiami į vieną.</li>
-  <li>Ateičiai: apsvarstyti double opt-in naujiems - gydo nonSubscribed problemą iš šaknų.</li>
+  <li><strong>Verta atlikti sąrašo valymą</strong> - peržiūrėti, kiek iš tikrųjų yra reikalingų, gyvų kontaktų, ir atsikratyti nereikalingų.</li>
+  <li><strong>Tai sutaupys pinigų</strong> - Omnisend kainuoja pagal kontaktų kiekį, tad išvalius sąrašą mokestis sumažės (tikėtina, keliais šimtais eurų).</li>
+  <li>Tie 40% kontaktų, kurie nedavė sutikimo, ir yra pagrindinis valymo objektas. Dalį jų galima pabandyti „prisijaukinti" atskira kampanija, prašant iš naujo patvirtinti, kad nori gauti laiškus, o likusius - pašalinti.</li>
+  <li>Ateičiai verta įjungti dvigubą patvirtinimą registruojantis - žmogus po registracijos paspaudžia patvirtinimą laiške. Taip į sąrašą pateks tik tikrai norintys, ir ši problema nebesikartos.</li>
 </ul>
 
 <h2>5. Registracijos forma</h2>
 <ul>
-  <li>Signup forma nice, subscribe rodiklis neblogas - NE prioritetas, galima pakol kas nekeisti.</li>
-  <li>Visada galima geriau: aiškus lead-magnet (pvz. -X% pirmam užsakymui) su kodu, pristatytu welcome laiške.</li>
+  <li>Registracijos forma svetainėje gera, žmonės neblogai registruojasi - <strong>tai ne prioritetas</strong>, kol kas galima nekeisti.</li>
+  <li>Vis dėlto visada galima pagerinti: aiški paskata užsiregistruoti (pvz. -10% pirmam pirkiniui) su kodu, kuris iškart ateina pasisveikinimo laiške.</li>
 </ul>
 
-<h2>6. Veiksmų planas (prioriteto tvarka)</h2>
+<h2>6. Veiksmų planas (svarbiausia - viršuje)</h2>
 <table>
-  <tr><th>Prio</th><th>Veiksmas</th></tr>
-  <tr><td class="prio">P1</td><td>Sukurti segmentus (VIP / aktyvūs 30 / aktyvūs 90 / neaktyvūs / kategorijos) ir pereiti nuo „visiems" prie tikslinio siuntimo. Tikslas - grąžinti atidarymus į 40%+.</td></tr>
-  <tr><td class="prio">P1</td><td>Bazės higiena + re-permission nonSubscribed 40% (mažina Omnisend kaštus + gina reputaciją).</td></tr>
-  <tr><td class="prio">P2</td><td>Automatikų praplėtimas iki 3 laiškų ir dizaino refresh: Welcome (+kodas, mažesnis delay), No Purchase 30/60, Anniversary, After 2nd purchase.</td></tr>
-  <tr><td class="prio">P2</td><td>Abandoned cart vs checkout: atskirti turinį + logiką, checkout urgent, 3 laiškai, suppression tarp jų.</td></tr>
-  <tr><td class="prio">P2</td><td>Įjungti + pataisyti Product Abandonment; sukurti atsiliepimų flow; sukurti papildymo (replenishment) flow suvartojamoms prekėms.</td></tr>
-  <tr><td class="prio">P3</td><td>Sutvarkyti dublius (4 welcome, 2 checkout), pervadinti be „(Maily)", standartizuoti sender vardą.</td></tr>
-  <tr><td class="prio">P3</td><td>QA checklist prieš kiekvieną siuntimą (subject netuščias, merge tag atsivaizduoja, nuoroda/kodas veikia).</td></tr>
+  <tr><th>Eiliškumas</th><th>Ką darome</th></tr>
+  <tr><td class="prio">1</td><td>Susikuriame žmonių grupes (VIP, aktyvūs 30 d., aktyvūs 90 d., neaktyvūs, pagal domėjimąsi) ir nustojame siųsti „visiems iš eilės". Tikslas - grąžinti atidarymus virš 40%.</td></tr>
+  <tr><td class="prio">1</td><td>Išvalome kontaktų sąrašą ir sutvarkome tuos 40% be sutikimo (sumažiname Omnisend mokestį ir apsaugome reputaciją).</td></tr>
+  <tr><td class="prio">2</td><td>Praplečiame automatinius laiškus iki 3 ir atnaujiname jų dizainą: pasisveikinimo (su kodu ir trumpesne pauze), 30/60 d. priminimai, gimtadienio, padėkos po 2-o pirkimo.</td></tr>
+  <tr><td class="prio">2</td><td>Sutvarkome „palikto krepšelio" ir „neužbaigto pirkimo" laiškus: atskiriame turinį, „neužbaigtą pirkimą" darome skubesnį, po 3 laiškus, ir kad tas pats žmogus negautų abiejų.</td></tr>
+  <tr><td class="prio">2</td><td>Įjungiame ir pataisome „peržiūrėtos prekės" laišką; sukuriame atsiliepimų prašymo seką; sukuriame priminimą papildyti atsargas (besibaigiantiems valikliams).</td></tr>
+  <tr><td class="prio">3</td><td>Pašaliname dublikatus (4 pasisveikinimo, 2 neužbaigto pirkimo), pervadiname be „(Maily)", suvienodiname siuntėjo vardą.</td></tr>
+  <tr><td class="prio">3</td><td>Įvedame patikrą prieš kiekvieną siuntimą (kad tema nebūtų tuščia, nuorodos ir kodai veiktų, viskas atrodytų tvarkingai).</td></tr>
 </table>
 
-<p class="note">Pastaba: automatikų per-laišką atidarymų % ir segmentų dydžiai imami iš Omnisend UI (API neduoda). Kampanijų skaičiai - realūs (v3 API).</p>
+<p class="note">Pastaba: dalį duomenų (kiek atidaromas kiekvienas automatinis laiškas ir kokio dydžio grupės) Omnisend rodo tik savo suvestinėse - juos pridėsime iš platformos. Kampanijų skaičiai šiame dokumente - tikri, paimti tiesiai iš sistemos.</p>
 
 </div>
 </body>
