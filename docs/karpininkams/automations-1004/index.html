@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="lt"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>KARPININKAMS.LT - automatizaciju perziura</title>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&family=Ubuntu:wght@400;500&display=swap" rel="stylesheet">
+<style>
+ body{margin:0;background:#141414;color:#fff;font-family:'Ubuntu',Arial,sans-serif;padding:28px 18px 60px}
+ .wrap{max-width:720px;margin:0 auto}
+ h1{font-family:'Oswald',sans-serif;text-transform:uppercase;letter-spacing:1px;font-size:28px;margin:0 0 6px}
+ .sub{color:#B3B3B3;font-size:14px;line-height:1.6;margin:0 0 26px}
+ .note{background:#2a2a2a;border-left:5px solid #F58C23;padding:16px 18px;border-radius:3px;
+   margin:0 0 30px;font-size:14px;line-height:1.65;color:#ddd}
+ .note b{color:#F58C23}
+ h2{font-family:'Oswald',sans-serif;text-transform:uppercase;font-size:19px;letter-spacing:1px;
+   color:#F58C23;margin:34px 0 4px}
+ .trig{color:#8f8f8f;font-size:13px;margin:0 0 14px}
+ code{background:#242424;padding:2px 6px;border-radius:3px;font-size:12px;color:#ccc}
+ .card{background:#202020;border:1px solid #3a3a3a;border-radius:3px;margin:0 0 20px;overflow:hidden}
+ .bar{display:flex;align-items:baseline;gap:10px;padding:13px 16px;border-bottom:1px solid #2f2f2f}
+ .nm{font-family:'Oswald',sans-serif;text-transform:uppercase;letter-spacing:1px;font-size:15px}
+ .dl{color:#F58C23;font-size:13px}
+ .ds{color:#a8a8a8;font-size:13px}
+ .open{margin-left:auto;color:#F58C23;font-size:13px;text-decoration:none;white-space:nowrap}
+ iframe{display:block;width:100%;border:0;background:#141414}
+ footer{color:#6f6f6f;font-size:12px;line-height:1.7;margin-top:40px;border-top:1px solid #2c2c2c;padding-top:18px}
+</style>
+<script>
+function fit(f){
+  try{
+    var h=f.contentWindow.document.documentElement.scrollHeight;
+    if(h>60){f.style.height=h+'px';}
+  }catch(e){}
+}
+window.addEventListener('load',function(){
+  var fs=document.getElementsByTagName('iframe');
+  setTimeout(function(){for(var i=0;i<fs.length;i++){fit(fs[i]);}},900);
+  setTimeout(function(){for(var i=0;i<fs.length;i++){fit(fs[i]);}},2500);
+});
+</script>
+</head>
+<body><div class="wrap">
+<h1>KARPININKAMS.LT</h1>
+<p class="sub">Automatizaciju srautai &middot; 9 laiskai &middot; atnaujinta 2026-10-04</p>
+<div class="note"><b>Ka verta zinoti perziurint:</b><br>&bull; Produktu tinkleliai yra <b>mock</b> - gyvai juos sudes Omnisend natyvus blokai.<br>&bull; CTA naudoja merge tag'us (<code>{{abandonedCheckoutUrl}}</code>, <code>{{lastViewedProductUrl}}</code>), tad perziuroje jie neveda niekur.<br>&bull; <b>Logo ir footer'io nera</b> - Omnisend prideda natyviai.<br>&bull; <b>Nuolaidos kodo krepselio sraute nebeliko</b> - klausimyne jo nebuvo.<br>&bull; <b>Winback srautas istrintas</b>, po pirkimo palikti 2 laiskai.</div>
+<h2>Apleistas krepselis</h2><p class="trig">Trigeris: <code>Added product to cart</code> &middot; aplankas <code>02-cart</code></p><div class="card"><div class="bar"><span class="nm">cart-01</span><span class="dl">+1 val.</span><span class="ds">Svelnus priminimas, be nuolaidos</span><a class="open" href="cart-01.html" target="_blank">Atidaryti &rarr;</a></div><iframe src="cart-01.html" sandbox="allow-same-origin allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation" onload="fit(this)" scrolling="no" height="600"></iframe></div><div class="card"><div class="bar"><span class="nm">cart-02</span><span class="dl">+8 val.</span><span class="ds">Priminimas + 4 patikinimo blokai + kontaktai</span><a class="open" href="cart-02.html" target="_blank">Atidaryti &rarr;</a></div><iframe src="cart-02.html" sandbox="allow-same-origin allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation" onload="fit(this)" scrolling="no" height="600"></iframe></div><div class="card"><div class="bar"><span class="nm">cart-03</span><span class="dl">+24 val.</span><span class="ds">Paskutinis priminimas, be nuolaidos kodo, nuoroda i akcijas</span><a class="open" href="cart-03.html" target="_blank">Atidaryti &rarr;</a></div><iframe src="cart-03.html" sandbox="allow-same-origin allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation" onload="fit(this)" scrolling="no" height="600"></iframe></div><h2>Apleistas apmokejimas</h2><p class="trig">Trigeris: <code>Started checkout</code> &middot; aplankas <code>03-checkout</code></p><div class="card"><div class="bar"><span class="nm">checkout-01</span><span class="dl">+45 min.</span><span class="ds">Liko tik apmokejimas</span><a class="open" href="checkout-01.html" target="_blank">Atidaryti &rarr;</a></div><iframe src="checkout-01.html" sandbox="allow-same-origin allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation" onload="fit(this)" scrolling="no" height="600"></iframe></div><div class="card"><div class="bar"><span class="nm">checkout-02</span><span class="dl">+12 val.</span><span class="ds">Pagalba + Paysera ir terminu blokai</span><a class="open" href="checkout-02.html" target="_blank">Atidaryti &rarr;</a></div><iframe src="checkout-02.html" sandbox="allow-same-origin allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation" onload="fit(this)" scrolling="no" height="600"></iframe></div><h2>Narsymo apleidimas</h2><p class="trig">Trigeris: <code>Viewed product (inStock)</code> &middot; aplankas <code>04-browse</code></p><div class="card"><div class="bar"><span class="nm">browse-01</span><span class="dl">+3 val.</span><span class="ds">Perziureta preke + panasios prekes</span><a class="open" href="browse-01.html" target="_blank">Atidaryti &rarr;</a></div><iframe src="browse-01.html" sandbox="allow-same-origin allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation" onload="fit(this)" scrolling="no" height="600"></iframe></div><div class="card"><div class="bar"><span class="nm">browse-02</span><span class="dl">+2 d. (neatidariusiems)</span><span class="ds">Pagalba apsispresti + panasios prekes</span><a class="open" href="browse-02.html" target="_blank">Atidaryti &rarr;</a></div><iframe src="browse-02.html" sandbox="allow-same-origin allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation" onload="fit(this)" scrolling="no" height="600"></iframe></div><h2>Po pirkimo</h2><p class="trig">Trigeris: <code>Order placed / fulfilled</code> &middot; aplankas <code>05-post-purchase</code></p><div class="card"><div class="bar"><span class="nm">post-01</span><span class="dl">iskart</span><span class="ds">Padeka + ko tiketis (3-6 d. / 14-21 d.)</span><a class="open" href="post-01.html" target="_blank">Atidaryti &rarr;</a></div><iframe src="post-01.html" sandbox="allow-same-origin allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation" onload="fit(this)" scrolling="no" height="600"></iframe></div><div class="card"><div class="bar"><span class="nm">post-02</span><span class="dl">+10 d.</span><span class="ds">Ivertinimo prasymas + 3 zingsniu kelias prekes puslapyje</span><a class="open" href="post-02.html" target="_blank">Atidaryti &rarr;</a></div><iframe src="post-02.html" sandbox="allow-same-origin allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation" onload="fit(this)" scrolling="no" height="600"></iframe></div>
+<footer>Peržiūra sugeneruota is clients/karpininkams/automations/_preview_build.py</footer>
+</div></body></html>
