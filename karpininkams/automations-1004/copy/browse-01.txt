@@ -1,0 +1,9 @@
+# browse-01 - copy nuo Claude Opus 5 (Codex 401 token_revoked, 2026-09-28)
+SUBJECT: Žiūrėjai, bet nepasiėmei
+PREHEADER: Prekė tebėra kataloge, likutį matai jos puslapyje
+KICKER: Peržiūrėta
+TITLE: Ta prekė vis dar laukia
+BODY: Neseniai užsukai į šitą prekę, bet toliau nenuėjai. Palikom nuorodą, kad nereikėtų ieškoti iš naujo.
+CTA: Peržiūrėti prekę
+SIM_KICKER: Panašios prekės
+NOTE: Prekės puslapyje matysi tikslų likutį ir pristatymo terminą.
