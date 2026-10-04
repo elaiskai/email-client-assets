@@ -1,0 +1,8 @@
+# cart-01 - copy nuo Claude Opus 5 (Codex 401 token_revoked, 2026-09-28)
+SUBJECT: Krepšelis liko neužbaigtas
+PREHEADER: Prekės išsaugotos, grįžti gali kada patogu
+KICKER: Priminimas
+TITLE: Tavo krepšelis dar laukia
+BODY: Kažkas sutrukdė ir krepšelis liko neužbaigtas. Prekės tebėra jame, tad tęsti gali bet kada.
+CTA: Grįžti į krepšelį
+NOTE: Krepšelį išsaugojom, tad iš naujo nieko rinkti nereikės.
