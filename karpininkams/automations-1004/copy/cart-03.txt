@@ -1,0 +1,9 @@
+# cart-03 - generuota per lt_copy.py
+SUBJECT: Dar vienas žvilgsnis į Tavo krepšelį
+PREHEADER: Pasitikrink likučius ir pasiruošk kitai sesijai.
+KICKER: Prieš kitą sesiją
+TITLE: Gal pravers kitai sesijai?
+BODY: Tavo krepšelis dar laukia - primename paskutinį kartą. Tikslų kiekvienos prekės likutį sandėlyje rasi jos puslapyje.
+CTA: Grįžti į krepšelį
+OFFERS_BODY: Jei dairaisi geresnės kainos, akcijų skiltyje Tavęs laukia apie 1700 prekių su 11-50% nuolaidomis.
+OFFERS_LINK: Peržiūrėti visas akcijas
