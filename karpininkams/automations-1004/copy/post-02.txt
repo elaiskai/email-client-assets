@@ -1,0 +1,13 @@
+# post-02 - generuota per lt_copy.py
+SUBJECT: Kaip Tau naujasis pirkinys?
+PREHEADER: Pasidalyk patirtimi - kitam karpininkui bus lengviau išsirinkti.
+KICKER: Žvejys žvejui
+TITLE: Kaip pirkinys pasirodė sesijoje?
+BODY: Jau spėjai išbandyti naują pirkinį? Palik įvertinimą jo puslapyje - papasakok, kas Tau patiko, o kas galėjo būti geriau.
+STEPS_TITLE: Kaip palikti įvertinimą?
+STEP1: Paspausk žemiau esančią prekę - atsidarys jos puslapis.
+STEP2: Atidaryk skirtuką „Įvertinimai“ ir rask formą „Parašyti įvertinimą“.
+STEP3: Pažymėk žvaigždutes, įrašyk vardą, kelis sakinius ir spausk „Tęsti“. Registruotis nereikia.
+NOTE: Net kelios Tavo eilutės padeda kitiems žvejams apsispręsti.
+HELP_TITLE: Kažkas ne taip?
+HELP_BODY: Jei prekė neatitiko Tavo lūkesčių, pirmiausia parašyk mums - kartu paieškosime sprendimo.
