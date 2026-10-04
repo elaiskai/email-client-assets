@@ -1,0 +1,8 @@
+# checkout-01 - copy nuo Claude Opus 5 (Codex 401 token_revoked, 2026-09-28)
+SUBJECT: Liko vienas žingsnis
+PREHEADER: Užsakymas išsaugotas, apmokėjimą užbaigsi per minutę
+KICKER: Beveik viskas
+TITLE: Liko tik apmokėjimas
+BODY: Užsakymą jau buvai pradėjęs, bet apmokėjimas liko nebaigtas. Viskas išsaugota, tad iš naujo nieko vesti nereikės.
+CTA: Užbaigti užsakymą
+NOTE: Jei atsiskaitant kažkas strigo, parašyk - dažniausiai sutvarkom greitai.
