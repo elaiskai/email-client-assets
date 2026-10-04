@@ -1,0 +1,10 @@
+# cart-02 - copy nuo Claude Opus 5 (Codex 401 token_revoked, 2026-09-28)
+SUBJECT: Vis dar galvoji apie krepšelį?
+PREHEADER: Likučiai, pristatymo terminai ir kur mus rasti Vilniuje
+KICKER: Dar kartą
+TITLE: Krepšelis vis dar tavo
+BODY: Jei stabdo kokia nors smulkmena, žemiau surašėm tai, ko klausia dažniausiai. Nepadėjo - skambink, atsakysim.
+CTA: Peržiūrėti krepšelį
+FACTS_KICKER: Ką verta žinoti
+HELP_TITLE: Kilo klausimų?
+HELP_BODY: Skambink arba rašyk darbo dienomis nuo 10 iki 15 val., padėsim išsirinkti.
