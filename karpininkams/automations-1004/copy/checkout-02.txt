@@ -1,0 +1,14 @@
+# checkout-02 - copy nuo Claude Opus 5 (Codex 401 token_revoked, 2026-09-28)
+SUBJECT: Padėsim užbaigti užsakymą
+PREHEADER: Paysera, pristatymo terminai ir atsiėmimas Vilniuje
+KICKER: Galim padėti
+TITLE: Užsakymas vis dar nebaigtas
+BODY: Jei sustojai ties apmokėjimu, dažnai užtenka atsakyti į vieną klausimą. Žemiau - tai, kas rūpi dažniausiai.
+CTA: Grįžti prie užsakymo
+FACTS_KICKER: Kaip viskas vyksta
+CO_USP1: Atsiskaitymas per Paysera, patvirtinimas per 1-24 val.
+CO_USP2: Sandėlyje esančios prekės keliauja per 3-6 dienas
+CO_USP3: Užsakomos prekės atkeliauja per 14-21 dieną
+CO_USP4: Atsiėmimas Savanorių pr. 6A, Vilniuje - nemokamas
+HELP_TITLE: Kažkas neaišku?
+HELP_BODY: Skambink arba rašyk darbo dienomis nuo 10 iki 15 val., atsakysim be ilgų formų.
