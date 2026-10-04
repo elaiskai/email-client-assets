@@ -1,0 +1,13 @@
+# post-01 - copy nuo Claude Opus 5 (Codex 401 token_revoked, 2026-09-28)
+SUBJECT: Užsakymą gavom
+PREHEADER: Ką darom toliau ir per kiek laiko prekės bus pas tave
+KICKER: Ačiū
+TITLE: Užsakymą gavom
+BODY: Ačiū, kad renkiesi mus. Toliau viskas paprasta: surenkam, supakuojam ir išsiunčiam, o terminas priklauso nuo to, ar prekė sandėlyje, ar užsakoma.
+FACTS_KICKER: Ko tikėtis
+PP_USP1: Sandėlyje esančios prekės išsiunčiamos greitai
+PP_USP2: Pristatymas per 3-6 dienas nuo apmokėjimo patvirtinimo
+PP_USP3: Užsakomos prekės atkeliauja per 14-21 dieną
+PP_USP4: Atsiimti Vilniuje gali nemokamai, I-V 10-15 val.
+HELP_TITLE: Klausimai dėl užsakymo?
+HELP_BODY: Skambink arba rašyk - pasakysim, kurioje stadijoje tavo prekės.
