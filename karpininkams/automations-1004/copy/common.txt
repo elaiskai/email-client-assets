@@ -1,0 +1,5 @@
+# common - copy nuo Claude Opus 5 (Codex 401 token_revoked, 2026-09-28)
+USP1: Prekės puslapyje matai tikslų likutį sandėlyje
+USP2: Sandėlyje esančios prekės keliauja per 3-6 dienas
+USP3: Atsiėmimas Vilniuje - nemokamas
+USP4: 8 metai patirties ir 40 su viršum prekių ženklų
