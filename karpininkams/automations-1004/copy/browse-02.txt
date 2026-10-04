@@ -1,0 +1,10 @@
+# browse-02 - copy nuo Claude Opus 5 (Codex 401 token_revoked, 2026-09-28)
+SUBJECT: Padėsim apsispręsti
+PREHEADER: Parašyk, kokiom sąlygom žvejoji, ir pasakysim tiesiai
+KICKER: Antras žvilgsnis
+TITLE: Nesi tikras, ar tinka?
+BODY: Dvejojant paprastai kliūva ne kaina, o klausimas, ar prekė tikrai tiks tavo sesijai. Specifikacijos to neatsako, o mes atsakom.
+CTA: Grįžti prie prekės
+SIM_KICKER: Verta palyginti
+HELP_TITLE: Parašyk, ką žvejoji
+HELP_BODY: Pasakyk, kokiam vandeniui ir kokiai sesijai renkiesi - patarsim, ar verta imti būtent šitą.
