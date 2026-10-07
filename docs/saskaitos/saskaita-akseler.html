@@ -2,111 +2,142 @@
 <html lang="lt">
 <head>
 <meta charset="utf-8">
-<title>Saskaita Akseler</title>
+<title>Saskaita 065 Akseler</title>
 <style>
-  @page { size: A4; margin: 18mm 16mm; }
-  body { font-family: "Helvetica Neue", Arial, sans-serif; color: #111; font-size: 13px; line-height: 1.5; margin: 0; }
-  .wrap { max-width: 178mm; margin: 0 auto; }
-  h1 { font-size: 22px; letter-spacing: 1px; margin: 0 0 4px; text-align: center; text-transform: uppercase; }
-  .nr { text-align: center; font-size: 15px; margin-bottom: 26px; }
-  .dates { margin-bottom: 26px; }
-  .dates div { margin-bottom: 2px; }
-  .parties { display: flex; gap: 28px; margin-bottom: 30px; }
-  .party { flex: 1; }
-  .party h2 { font-size: 11px; letter-spacing: 1.4px; text-transform: uppercase; color: #666;
-              border-bottom: 1px solid #ccc; padding-bottom: 5px; margin: 0 0 9px; font-weight: 600; }
-  .party div { margin-bottom: 2px; }
-  table { width: 100%; border-collapse: collapse; margin-bottom: 22px; }
-  th { font-size: 11px; letter-spacing: 0.6px; text-transform: uppercase; color: #666;
-       border-bottom: 1.5px solid #333; padding: 8px 6px; text-align: left; font-weight: 600; }
-  td { padding: 10px 6px; border-bottom: 1px solid #e3e3e3; }
-  .r { text-align: right; }
-  .c { text-align: center; }
-  .totals { width: 60%; margin-left: auto; }
-  .totals td { border: none; padding: 4px 6px; }
-  .totals .grand td { border-top: 1.5px solid #333; font-weight: 700; font-size: 15px; padding-top: 9px; }
-  .words { margin: 20px 0 34px; }
-  .sign { margin-top: 42px; }
-  .ed { background: #fff6d6; outline: 1px dashed #c9a227; padding: 0 3px; min-width: 70px;
-        display: inline-block; }
-  .hint { background: #f3f4f6; border-left: 3px solid #999; padding: 10px 13px; font-size: 12px;
-          color: #444; margin-bottom: 26px; }
-  @media print { .hint { display: none; } .ed { background: none; outline: none; } }
+  @page { size: A4; margin: 20mm 18mm; }
+  * { box-sizing: border-box; }
+  body { font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; color: #1a1a1a;
+         font-size: 12.5px; line-height: 1.55; margin: 0; padding: 24px; }
+  .page { max-width: 760px; margin: 0 auto; }
+
+  .top { display: flex; justify-content: space-between; align-items: flex-start; }
+  .brand { font-size: 17px; font-weight: 700; }
+  .brand small { display: block; font-size: 11.5px; font-weight: 400; color: #666;
+                 margin-top: 2px; }
+  .doc { text-align: right; }
+  .doc h1 { font-size: 26px; font-weight: 700; margin: 0; letter-spacing: -0.3px; }
+  .doc .nr { font-size: 11.5px; color: #555; margin-top: 5px; }
+  .doc .nr b { color: #1a1a1a; }
+
+  hr { border: none; border-top: 1px solid #d8d8d8; margin: 20px 0 22px; }
+
+  .lab { font-size: 9.5px; letter-spacing: 1.3px; text-transform: uppercase; color: #777;
+         font-weight: 700; margin-bottom: 6px; }
+
+  .meta { display: flex; gap: 40px; margin-bottom: 26px; }
+  .meta > div { min-width: 150px; }
+
+  .parties { display: flex; gap: 40px; margin-bottom: 34px; }
+  .parties > div { flex: 1; }
+  .parties .nm { font-weight: 700; }
+
+  table { width: 100%; border-collapse: collapse; }
+  thead th { font-size: 9.5px; letter-spacing: 1.3px; text-transform: uppercase; color: #777;
+             font-weight: 700; padding: 0 0 9px; border-bottom: 1px solid #d8d8d8;
+             text-align: right; }
+  thead th:first-child { text-align: left; }
+  tbody td { padding: 14px 0; border-bottom: 1px solid #d8d8d8; text-align: right; }
+  tbody td:first-child { text-align: left; }
+
+  .sum { text-align: right; margin-top: 18px; }
+  .sum .row { display: flex; justify-content: flex-end; align-items: baseline; gap: 26px; }
+  .sum .big { font-size: 21px; font-weight: 700; }
+  .sum .words { font-size: 11.5px; color: #666; margin-top: 8px; }
+
+  .foot { display: flex; gap: 40px; margin-top: 44px; }
+  .foot > div { flex: 1; }
+  .note { font-size: 10.5px; color: #888; margin-top: 44px; }
 </style>
 </head>
 <body>
-<div class="wrap">
+<div class="page">
 
-  <div class="hint">
-    Geltonus laukus užpildyk tiesiai čia (jie redaguojami), tada <b>Cmd+P → Save as PDF</b>.
-    Ši pastaba spausdinant nematoma.
+  <div class="top">
+    <div class="brand">MB Direktor<small>El. pašto rinkodara</small></div>
+    <div class="doc">
+      <h1>SĄSKAITA FAKTŪRA</h1>
+      <div class="nr">Serija ir Nr. <b>065</b></div>
+    </div>
   </div>
 
-  <h1>Sąskaita faktūra</h1>
-  <div class="nr">Serija ELA Nr. <span class="ed" contenteditable="true">___</span></div>
+  <hr>
 
-  <div class="dates">
-    <div>Išrašymo data: <b>2026-10-07</b></div>
-    <div>Apmokėti iki: <b><span class="ed" contenteditable="true">2026-10-17</span></b></div>
+  <div class="meta">
+    <div>
+      <div class="lab">Išrašymo data</div>
+      <div>2026-10-07</div>
+    </div>
+    <div>
+      <div class="lab">Apmokėti iki</div>
+      <div><b>2026-10-14</b></div>
+    </div>
+    <div>
+      <div class="lab">Suma</div>
+      <div><b>490,00 EUR</b></div>
+    </div>
   </div>
 
   <div class="parties">
-    <div class="party">
-      <h2>Pardavėjas</h2>
-      <div><b>MB „Direktor"</b></div>
+    <div>
+      <div class="lab">Pardavėjas</div>
+      <div class="nm">MB Direktor</div>
       <div>Įmonės kodas 307631462</div>
-      <div>PVM mokėtojo kodas <span class="ed" contenteditable="true">___</span></div>
-      <div>Vytenio g. 50A-201</div>
-      <div>LT-03202 Vilnius</div>
-      <div>A. s. <span class="ed" contenteditable="true">LT___</span></div>
-      <div>Bankas <span class="ed" contenteditable="true">___</span></div>
+      <div>Vytenio g. 50A-201, LT-03202 Vilnius</div>
+      <div>+37060544621</div>
+      <div>info@elaiskai.lt</div>
     </div>
-    <div class="party">
-      <h2>Pirkėjas</h2>
-      <div><b>MB „Akseler"</b></div>
+    <div>
+      <div class="lab">Pirkėjas</div>
+      <div class="nm">MB Akseler</div>
+      <div>Enrike Heinsohn</div>
       <div>Įmonės kodas 307018872</div>
-      <div>PVM mokėtojo kodas LT100018122412</div>
-      <div>Vytenio g. 50A-201</div>
-      <div>LT-03202 Vilnius</div>
-      <div>Vadovas Enrike Heinsohn</div>
-      <div>Tel. +370 623 00244</div>
+      <div>PVM kodas LT100018122412</div>
+      <div>Vytenio g. 50A-201, LT-03202 Vilnius</div>
     </div>
   </div>
 
   <table>
-    <tr>
-      <th style="width:36px">Nr.</th>
-      <th>Paslaugos pavadinimas</th>
-      <th class="c" style="width:78px">Mato vnt.</th>
-      <th class="c" style="width:60px">Kiekis</th>
-      <th class="r" style="width:92px">Kaina, EUR</th>
-      <th class="r" style="width:92px">Suma, EUR</th>
-    </tr>
-    <tr>
-      <td>1.</td>
-      <td>El. pašto rinkodaros paslaugos</td>
-      <td class="c">vnt.</td>
-      <td class="c">1</td>
-      <td class="r">490,00</td>
-      <td class="r">490,00</td>
-    </tr>
+    <thead>
+      <tr>
+        <th>Paslauga</th>
+        <th style="width:90px">Kiekis</th>
+        <th style="width:110px">Kaina</th>
+        <th style="width:110px">Suma</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>El. pašto rinkodara (2026 m. spalio mėn.)</td>
+        <td>1</td>
+        <td>490,00</td>
+        <td>490,00</td>
+      </tr>
+    </tbody>
   </table>
 
-  <table class="totals">
-    <tr><td>Suma:</td><td class="r">490,00 EUR</td></tr>
-    <tr><td>PVM <span class="ed" contenteditable="true">___</span>:</td>
-        <td class="r"><span class="ed" contenteditable="true">___</span></td></tr>
-    <tr class="grand"><td>Iš viso mokėti:</td>
-        <td class="r"><span class="ed" contenteditable="true">490,00 EUR</span></td></tr>
-  </table>
-
-  <div class="words">
-    Suma žodžiais: <span class="ed" contenteditable="true">keturi šimtai devyniasdešimt eurų 00 ct</span>.
+  <div class="sum">
+    <div class="row">
+      <span class="lab" style="margin:0">Viso apmokėti</span>
+      <span class="big">490,00 EUR</span>
+    </div>
+    <div class="words">Suma žodžiais: keturi šimtai devyniasdešimt eurų 00 ct</div>
   </div>
 
-  <div class="sign">
-    <div>Sąskaitą išrašė: <b>Lukas Vincevičius</b></div>
+  <div class="foot">
+    <div>
+      <div class="lab">Apmokėjimas</div>
+      <div>Gavėjas: MB Direktor</div>
+      <div>Sąskaita: <b>LT343250092594261882</b></div>
+      <div>Paskirtis: Sąskaita Nr. 065</div>
+    </div>
+    <div>
+      <div class="lab">Sąskaitą išrašė</div>
+      <div>Lukas Vincevičius</div>
+      <div style="color:#666">MB Direktor</div>
+    </div>
   </div>
+
+  <div class="note">Sąskaita sudaryta elektroniniu būdu ir galioja be parašo.</div>
 
 </div>
 </body>
