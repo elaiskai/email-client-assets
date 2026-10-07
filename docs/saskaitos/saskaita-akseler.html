@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+<meta charset="utf-8">
+<title>Saskaita Akseler</title>
+<style>
+  @page { size: A4; margin: 18mm 16mm; }
+  body { font-family: "Helvetica Neue", Arial, sans-serif; color: #111; font-size: 13px; line-height: 1.5; margin: 0; }
+  .wrap { max-width: 178mm; margin: 0 auto; }
+  h1 { font-size: 22px; letter-spacing: 1px; margin: 0 0 4px; text-align: center; text-transform: uppercase; }
+  .nr { text-align: center; font-size: 15px; margin-bottom: 26px; }
+  .dates { margin-bottom: 26px; }
+  .dates div { margin-bottom: 2px; }
+  .parties { display: flex; gap: 28px; margin-bottom: 30px; }
+  .party { flex: 1; }
+  .party h2 { font-size: 11px; letter-spacing: 1.4px; text-transform: uppercase; color: #666;
+              border-bottom: 1px solid #ccc; padding-bottom: 5px; margin: 0 0 9px; font-weight: 600; }
+  .party div { margin-bottom: 2px; }
+  table { width: 100%; border-collapse: collapse; margin-bottom: 22px; }
+  th { font-size: 11px; letter-spacing: 0.6px; text-transform: uppercase; color: #666;
+       border-bottom: 1.5px solid #333; padding: 8px 6px; text-align: left; font-weight: 600; }
+  td { padding: 10px 6px; border-bottom: 1px solid #e3e3e3; }
+  .r { text-align: right; }
+  .c { text-align: center; }
+  .totals { width: 60%; margin-left: auto; }
+  .totals td { border: none; padding: 4px 6px; }
+  .totals .grand td { border-top: 1.5px solid #333; font-weight: 700; font-size: 15px; padding-top: 9px; }
+  .words { margin: 20px 0 34px; }
+  .sign { margin-top: 42px; }
+  .ed { background: #fff6d6; outline: 1px dashed #c9a227; padding: 0 3px; min-width: 70px;
+        display: inline-block; }
+  .hint { background: #f3f4f6; border-left: 3px solid #999; padding: 10px 13px; font-size: 12px;
+          color: #444; margin-bottom: 26px; }
+  @media print { .hint { display: none; } .ed { background: none; outline: none; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="hint">
+    Geltonus laukus užpildyk tiesiai čia (jie redaguojami), tada <b>Cmd+P → Save as PDF</b>.
+    Ši pastaba spausdinant nematoma.
+  </div>
+
+  <h1>Sąskaita faktūra</h1>
+  <div class="nr">Serija ELA Nr. <span class="ed" contenteditable="true">___</span></div>
+
+  <div class="dates">
+    <div>Išrašymo data: <b>2026-10-07</b></div>
+    <div>Apmokėti iki: <b><span class="ed" contenteditable="true">2026-10-17</span></b></div>
+  </div>
+
+  <div class="parties">
+    <div class="party">
+      <h2>Pardavėjas</h2>
+      <div><b>MB „Direktor"</b></div>
+      <div>Įmonės kodas 307631462</div>
+      <div>PVM mokėtojo kodas <span class="ed" contenteditable="true">___</span></div>
+      <div>Vytenio g. 50A-201</div>
+      <div>LT-03202 Vilnius</div>
+      <div>A. s. <span class="ed" contenteditable="true">LT___</span></div>
+      <div>Bankas <span class="ed" contenteditable="true">___</span></div>
+    </div>
+    <div class="party">
+      <h2>Pirkėjas</h2>
+      <div><b>MB „Akseler"</b></div>
+      <div>Įmonės kodas 307018872</div>
+      <div>PVM mokėtojo kodas LT100018122412</div>
+      <div>Vytenio g. 50A-201</div>
+      <div>LT-03202 Vilnius</div>
+      <div>Vadovas Enrike Heinsohn</div>
+      <div>Tel. +370 623 00244</div>
+    </div>
+  </div>
+
+  <table>
+    <tr>
+      <th style="width:36px">Nr.</th>
+      <th>Paslaugos pavadinimas</th>
+      <th class="c" style="width:78px">Mato vnt.</th>
+      <th class="c" style="width:60px">Kiekis</th>
+      <th class="r" style="width:92px">Kaina, EUR</th>
+      <th class="r" style="width:92px">Suma, EUR</th>
+    </tr>
+    <tr>
+      <td>1.</td>
+      <td>El. pašto rinkodaros paslaugos</td>
+      <td class="c">vnt.</td>
+      <td class="c">1</td>
+      <td class="r">490,00</td>
+      <td class="r">490,00</td>
+    </tr>
+  </table>
+
+  <table class="totals">
+    <tr><td>Suma:</td><td class="r">490,00 EUR</td></tr>
+    <tr><td>PVM <span class="ed" contenteditable="true">___</span>:</td>
+        <td class="r"><span class="ed" contenteditable="true">___</span></td></tr>
+    <tr class="grand"><td>Iš viso mokėti:</td>
+        <td class="r"><span class="ed" contenteditable="true">490,00 EUR</span></td></tr>
+  </table>
+
+  <div class="words">
+    Suma žodžiais: <span class="ed" contenteditable="true">keturi šimtai devyniasdešimt eurų 00 ct</span>.
+  </div>
+
+  <div class="sign">
+    <div>Sąskaitą išrašė: <b>Lukas Vincevičius</b></div>
+  </div>
+
+</div>
+</body>
+</html>
