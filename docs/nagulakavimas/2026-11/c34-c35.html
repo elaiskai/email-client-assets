@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="lt"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nagulakavimas - C34 ir C35</title>
+<style>
+ body { font-family:-apple-system,Segoe UI,Roboto,Arial,sans-serif; background:#F4EEF0;
+        margin:0; padding:0 0 60px 0; color:#2b2b2b; }
+ header { background:#1a1a1a; color:#fff; padding:24px 18px 20px 18px; }
+ header h1 { margin:0 0 10px 0; font-size:20px; }
+ header p { margin:0 0 8px 0; font-size:13px; color:#D9C7CE; line-height:1.65; }
+ header b { color:#E89BB0; }
+ nav { position:sticky; top:0; background:#fff; padding:10px 12px; border-bottom:1px solid #EADDE2;
+       overflow-x:auto; white-space:nowrap; z-index:5; }
+ nav a { display:inline-block; margin-right:8px; padding:5px 12px; background:#FBF3F6;
+         border-radius:14px; color:#C97A92; font-size:13px; font-weight:600; text-decoration:none; }
+ section { max-width:760px; margin:22px auto 0 auto; background:#fff; border-radius:10px;
+           overflow:hidden; box-shadow:0 1px 3px rgba(0,0,0,.07); }
+ .head { padding:18px 20px 16px 20px; border-bottom:1px solid #F1E4E9; }
+ .meta { font-size:12px; color:#8a828c; margin-bottom:6px; }
+ .cid { font-weight:bold; color:#C97A92; font-size:14px; }
+ .when { margin-left:6px; }
+ .kind { display:inline-block; margin-left:8px; padding:2px 9px; background:#FBF3F6;
+         border:1px solid #E8D2DA; border-radius:12px; color:#C97A92; font-weight:bold;
+         font-size:11px; letter-spacing:.5px; }
+ h2 { margin:0 0 6px 0; font-size:17px; line-height:1.35; }
+ .seg { font-size:13px; color:#8a929c; line-height:1.6; }
+ .open { display:inline-block; margin-top:12px; padding:9px 18px; background:#1a1a1a;
+         color:#fff; border-radius:20px; font-size:13px; font-weight:600; text-decoration:none; }
+ iframe { display:block; width:100%; border:0; background:#fff; }
+</style>
+<script>
+ function fit(f) {
+   try {
+     var d = f.contentWindow.document;
+     f.style.height = (d.documentElement.scrollHeight || d.body.scrollHeight) + 'px';
+     setTimeout(function () {
+       f.style.height = (d.documentElement.scrollHeight || d.body.scrollHeight) + 'px';
+     }, 900);
+   } catch (e) { f.style.height = '3200px'; }
+ }
+ window.addEventListener('resize', function () {
+   document.querySelectorAll('iframe').forEach(fit);
+ });
+</script>
+</head><body>
+<header>
+  <h1>Nagulakavimas - C34 ir C35</h1>
+  <p><b>C34</b> antradieni 11-17 18:00, <b>C35</b> ketvirtadieni 11-19 18:00.
+  Abu segmentui „aktyvus 30". Laiskai gyvi - mygtukai ir prekiu nuorodos veikia.</p>
+  <p>Visos 18 prekiu pertikrintos gyvai <b>2026-11-12</b>, visos su likuciu.
+  Prekes NESIDUBLIUOJA su C30-C33. Copy per <b>lt_copy.py</b>, hero vaizdai per
+  <b>Codex gpt-image-2</b>; produktu nuotraukos renkamos automatiskai pagal sviesuma.</p>
+  <p>Maketai vel kitokie: <b>C34</b> - centruota highlight juosta, 2 stulpeliu sarasas,
+  YOSHI mini eile; <b>C35</b> - dideles korteles, irankiu pora, highlight PABAIGOJE.</p>
+  <p>⚠️ Nei viename nera akcijos pabaigos datos - klientas jos nepatvirtino.
+  <b>C34</b> maksimali nuolaida -60 %, <b>C35</b> -62 %.</p>
+</header>
+<nav><a href="#C34">C34</a> <a href="#C35">C35</a></nav>
+
+<section id="C34">
+  <div class="head">
+    <div class="meta"><span class="cid">C34</span> <span class="when">11-17 antradienis 18:00</span><span class="kind">Bazes ir topai iki -60 %</span></div>
+    <h2>Bazės ir topai: nuolaidos iki 60 %</h2>
+    <div class="seg">Preheader: VXS'93 topai - po 7,00 EUR, Sunday bazė - 8,94 EUR.</div>
+    <div class="seg">Temos alternatyvos: Tai, ką naudojate kasdien, dabar kainuoja mažiau / Bazė ir topas viename - 1,99 EUR</div>
+    <a class="open" href="c34.html" target="_blank">Atidaryti atskirame lange</a>
+  </div>
+  <iframe src="c34.html" loading="lazy" title="C34" onload="fit(this)"></iframe>
+</section>
+<section id="C35">
+  <div class="head">
+    <div class="meta"><span class="cid">C35</span> <span class="when">11-19 ketvirtadienis 18:00</span><span class="kind">Nagu dekoras iki -62 %</span></div>
+    <h2>Nagų dekorui ir įrankiams - iki 62 % nuolaida</h2>
+    <div class="seg">Preheader: BLACK SHINE akmenukai - 3,29 EUR, folijos lapeliai - 4,19 EUR.</div>
+    <div class="seg">Temos alternatyvos: Ar turite dekoro šventiniams klienčių norams? / Rinkinys nagų dekoracijoms - 1,90 EUR</div>
+    <a class="open" href="c35.html" target="_blank">Atidaryti atskirame lange</a>
+  </div>
+  <iframe src="c35.html" loading="lazy" title="C35" onload="fit(this)"></iframe>
+</section>
+</body></html>
